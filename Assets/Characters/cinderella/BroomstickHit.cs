@@ -92,5 +92,12 @@ public class BroomstickProjectile : MonoBehaviour
             // Handle collision with specified layers
             // You can add your collision handling code here
         }
+        
+        var healthComponent = other.GetComponent<Health>();
+        if(healthComponent != null)
+        {
+        	healthComponent.TakeDamage(1);
+        }
+        
     }
 }

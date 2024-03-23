@@ -140,9 +140,10 @@ GameObject:
   - component: {fileID: 3217787321599003397}
   - component: {fileID: 4725599585098144387}
   - component: {fileID: 2284011514172715662}
+  - component: {fileID: 1779190612086328501}
   m_Layer: 7
   m_Name: cinderella
-  m_TagString: Untagged
+  m_TagString: Player1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -385,3 +386,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shoePrefab: {fileID: 987292834950586058, guid: 74c4a9f08f36c433f9efaffbc67592a0, type: 3}
   spawnPoint: {fileID: 8929822359757775545}
+  cooldownPeriod: 1
+  collisionLayer:
+    serializedVersion: 2
+    m_Bits: 0
+--- !u!114 &1779190612086328501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6728680535298497565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f72f501d70094c2bb53b0b5dfba5638, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 30
+  currentHealth: 0
+  anim: {fileID: 3217787321599003397}

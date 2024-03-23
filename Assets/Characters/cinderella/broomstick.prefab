@@ -172,7 +172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 7
-  MaxDistance: 1.5
+  MaxDistance: 1
   ReturnSpeed: 7
   CooldownTime: 0.5
   collisionLayer:

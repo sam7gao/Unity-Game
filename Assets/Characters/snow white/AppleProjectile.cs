@@ -56,6 +56,11 @@ public class AppleProjectile : MonoBehaviour
         collided = true;
         // Destroy the projectile upon collision with any object
         Destroy(gameObject);
+        var healthComponent = other.GetComponent<Health>();
+        if(healthComponent != null)
+        {
+        	healthComponent.TakeDamage(3);
+        }
     }
     
 

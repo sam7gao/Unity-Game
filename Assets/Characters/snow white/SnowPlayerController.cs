@@ -152,9 +152,15 @@ public class SnowPlayerController : MonoBehaviour
         	yield return null;
     	}
 
+
+    	Rigidbody2D prefabRb = prefabInstance.GetComponent<Rigidbody2D>();
+    	prefabRb.velocity = Vector2.zero;
+    	prefabRb.gravityScale = 0f;
+
     	yield return new WaitForSeconds(remainTime);
 
-    	targetPosition = prefabInstance.transform.position - Vector3.up * moveDistance;
+    	// Move the prefab back to its spawn point
+    	targetPosition = prefabGrowthPoint.position;
     	elapsedTime = 0f;
 
     	while (prefabInstance.transform.position != targetPosition)

@@ -15,7 +15,7 @@ public class SelectionScreen : MonoBehaviour
 
     private int currentPlayer1Index = 0;
     private int currentPlayer2Index = 1;
-    private int currentStageIndex = 0;
+    private int currentStageIndex = 2;
 
     private bool player1SelectionComplete = false;
     private bool player2SelectionComplete = false;
@@ -125,10 +125,10 @@ public class SelectionScreen : MonoBehaviour
             	sceneName = "Dark Forest";
             	break;
         	case 1:
-            	sceneName = "Highlands";
+            	sceneName = "Highland3";
             	break;
         	case 2:
-            	sceneName = "SampleScene";
+            	sceneName = "Farm";
             	break;
             case 3:
             	sceneName = "Evening Goth";

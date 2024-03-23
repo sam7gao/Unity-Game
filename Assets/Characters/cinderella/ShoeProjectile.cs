@@ -6,12 +6,16 @@ public class ShoeProjectile : MonoBehaviour
 {
     public GameObject shoePrefab;
     public Transform spawnPoint;
+    public float cooldownPeriod = 1f;
+    private bool canShoot = true;
+    public LayerMask collisionLayer;
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.U))
+        if (Input.GetKeyDown(KeyCode.U) && canShoot)
         {
             ShootShoe();
+            StartCoroutine(CooldownCoroutine());
         }
     }
 
@@ -34,4 +38,28 @@ public class ShoeProjectile : MonoBehaviour
         // Adjust the rotation of the shoe projectile based on character's facing direction
         shoe.transform.localScale = new Vector3(direction, 1f, 1f);
     }
+    
+	IEnumerator CooldownCoroutine()
+    {
+        canShoot = false;
+        yield return new WaitForSeconds(cooldownPeriod);
+        canShoot = true;
+    }
+    
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        // Check if the collision is with the specified collision layer
+        if (((1 << collision.gameObject.layer) & collisionLayer) != 0)
+        {
+            var healthComponent = collision.gameObject.GetComponent<Health>();
+            if (healthComponent != null)
+            {
+                healthComponent.TakeDamage(3);
+            }
+        
+            // Destroy the projectile upon collision with any object
+            Destroy(gameObject);
+        }
+    }
+    
 }

@@ -14,6 +14,16 @@ public class ProjectileCollision : MonoBehaviour
         // Check if the other collider's layer is included in the collision layer mask
         if (((1 << other.gameObject.layer) & collisionLayer) != 0)
         {
+            if (other.CompareTag("Player1"))
+            {
+                // Apply damage if colliding with Player1
+                var healthComponent = other.GetComponent<Health>();
+                if (healthComponent != null)
+                {
+                    healthComponent.TakeDamage(2); // Apply damage to Player1
+                }
+            }
+            
             // Handle collision with allowed objects
             Debug.Log("Projectile collided with " + other.gameObject.name);
             

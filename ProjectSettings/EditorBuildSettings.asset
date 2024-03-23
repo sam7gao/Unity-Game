@@ -6,21 +6,39 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Intro1.unity
+    guid: a751e3242d9cb477c8c321568987abd7
+  - enabled: 1
+    path: Assets/Scenes/Intro2.unity
+    guid: bcb3765205c8742578480f6b59137143
+  - enabled: 1
+    path: Assets/Scenes/Intro3.unity
+    guid: a4a0f595ffc804b9999e5b8ea2727cff
+  - enabled: 1
+    path: Assets/Scenes/intro 4.unity
+    guid: 3446d9147cf69411184809f3f65cb978
+  - enabled: 1
     path: Assets/Selection Screen.unity
     guid: 8286172a54537428fb43bd3ad1f65e86
   - enabled: 1
-    path: Assets/Dark Forest.unity
+    path: Assets/Scenes/Dark Forest.unity
     guid: 8cf6bb7f2501c4a50a1475ea894b64d8
   - enabled: 1
-    path: Assets/Highlands.unity
-    guid: 005ebfd2b9dcf4fc194008003f97d095
+    path: Assets/Scenes/Highland3.unity
+    guid: 2c14f2db1e14946a19f93cba7e80efd7
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Farm.unity
+    guid: 07761d6d807994497975f43f8f132266
   - enabled: 1
-    path: Assets/Evening Goth.unity
+    path: Assets/Scenes/Evening Goth.unity
     guid: 10a3f6a1f07074f7a8b78473b90b64eb
   - enabled: 1
-    path: Assets/Seaside.unity
+    path: Assets/Scenes/Seaside.unity
     guid: 68773f766004c4aa9ba5f255ebdcbbcc
+  - enabled: 1
+    path: Assets/Scenes/ending1.unity
+    guid: 66ad2aae9e6384854a518a6ddfe31c61
+  - enabled: 1
+    path: Assets/Scenes/ending2.unity
+    guid: b2d912b47098140ef819a0903be9fb63
   m_configObjects: {}

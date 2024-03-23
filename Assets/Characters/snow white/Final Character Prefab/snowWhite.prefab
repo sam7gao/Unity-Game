@@ -108,9 +108,10 @@ GameObject:
   - component: {fileID: 1522329511062662261}
   - component: {fileID: 1559226794524027331}
   - component: {fileID: 4459309916213771571}
+  - component: {fileID: 168719263547838017}
   m_Layer: 11
   m_Name: snowWhite
-  m_TagString: Untagged
+  m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -335,7 +336,7 @@ MonoBehaviour:
   ProjectilePrefab: {fileID: 1355557923889578678, guid: 4932bc73c2bb94415b2a36c3a686cc8c, type: 3}
   PoisonPrefab: {fileID: -5180183506216302229, guid: 4ca713573a6b94744ad26451860cf317, type: 3}
   LaunchOffset: {fileID: 1454611081565381220}
-  projectileCooldown: 0.3
+  projectileCooldown: 0.2
   poisonCooldown: 0.5
   prefabGrowthPoint: {fileID: 1229331951817291938}
   prefabToEmerge: {fileID: 4292719736469930831, guid: 5928bfcbab7964d5ca2aa6c8d8455232, type: 3}
@@ -343,3 +344,18 @@ MonoBehaviour:
   remainTime: 4
   moveDistance: 3
   coffinCooldown: 3
+--- !u!114 &168719263547838017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7449315390523955996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f72f501d70094c2bb53b0b5dfba5638, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 30
+  currentHealth: 0
+  anim: {fileID: 1559226794524027331}
